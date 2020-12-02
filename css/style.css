@@ -84,14 +84,69 @@ main {
 
 .link_white a{
   text-decoration: none;
+
   color: grey;
   font-size: 20px;
   margin-left: 10px;
 }
 
+.link_white i{
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
 .link_white a:hover{
   color: white;
 }
+/* end main-nav */
+
+/* start playlist */
+.main-playlist h3{
+  color: white;
+  text-transform: uppercase;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.main-playlist li a {
+  color: grey;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.main-playlist li{
+  margin-bottom: 10px;
+}
+
+.main-playlist i{
+  font-size: 35px;
+
+}
+/* end playlist */
+
+/* start main nav footer */
+
+.main-nav-footer a{
+  color: grey;
+  text-decoration: none;
+  margin-left: 10px;
+
+
+}
+
+
+
+.main-nav-footer h2{
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+  color: white;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid white;
+}
+
+
 
 
 
