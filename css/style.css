@@ -10,8 +10,8 @@
   background-color: yellow;
   overflow: hidden;
 }
-.blu {
-  background-color: blue;
+.green {
+  background-color: green;
 }
 
 .red {
@@ -32,6 +32,7 @@ main {
 .main-playlist {
   flex-grow: 2;
   min-height: 200px;
+  /* barra laterale */
   overflow-y: auto;
 }
 
@@ -48,7 +49,7 @@ main {
   width: calc(100% - 250px);
   height: 100%;
   padding-top: 90px;
-  background-color: blue;
+  background-color: rgb(38, 42, 96);
   overflow-y: scroll;
 }
 
@@ -124,6 +125,71 @@ main {
 }
 /* end playlist */
 
+/* start categorie */
+
+.categorie{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.elementi{
+  margin-top: 15px;
+  width: 200px;
+  height: 100px;
+
+}
+/* end categorie */
+
+.title{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.categorie a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: grey;
+
+}
+/********** end categorie */
+.recently-played{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.elementi{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* start main nav footer */
 
 .main-nav-footer a{
@@ -142,6 +208,7 @@ main {
   font-size: 20px;
   color: white;
   margin-top: 20px;
+  margin-bottom: 20px;
   padding-top: 10px;
   border-top: 1px solid white;
 }
@@ -156,7 +223,7 @@ main {
 footer {
   width: 100%;
   height: 90px;
-  position: fixed;
+
   bottom:0;
   left: 0;
   background-color: grey;
