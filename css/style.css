@@ -37,9 +37,29 @@
   padding-top: 10px;
 }
 
-.descrizione{
-  
+.title{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 30px;
+  margin-left: 20px;
 }
+
+.text{
+  margin-left: 20px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+
+.layer{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 
 
 /* FINE REGOLE GENERALI */
@@ -53,10 +73,14 @@ main {
 .main-playlist{
   flex-grow: 2;
   min-height: 200px;
+
+}
+
+.main-playlist ul{
+  height: 100%;
   /* barra laterale */
   overflow-y: auto;
 }
-
 
 
 
@@ -126,6 +150,9 @@ main {
 /* end main-nav */
 
 /* start playlist */
+
+
+
 .main-playlist h3{
   color: white;
   text-transform: uppercase;
@@ -163,15 +190,6 @@ main {
   height: 100px;
 
 }
-/* end categorie */
-
-.title{
-  margin-top: 25px;
-  margin-bottom: 20px;
-  color: white;
-  font-size: 30px;
-  margin-left: 20px;
-}
 
 .categorie a{
   text-decoration: none;
@@ -180,39 +198,101 @@ main {
 
 }
 /********** end categorie */
+/* recently played */
 .recently-played{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-left: 20px;
   margin-right: 20px;
+
 }
 
 .elementi{
   width: calc(100% / 6);
   padding-right: 10px;
+  position: relative;
+}
 
+.recently-played h3 a{
+  color: white;
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+.recently-played p a{
+  color: white;
+  text-decoration: none;
+}
+
+.recently-played h3{
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.recently-played p{
+  text-align: center;
 }
 
 .elementi img{
   width: 100%;
-  height: 100%;
-
 }
 
-.elementi a:hover{
-
+.layer:hover{
+  background-color: rgba(0, 0, 0, 0.57);
 }
 
+.layer i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  color: white;
+  display: none;
+}
+
+.layer:hover i{
+  display: inline;
+}
 
 /* end recently-played */
 
+.creato-per{
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
+.release{
+  width: calc(100% / 6);
+}
 
+.release img{
+  width: 100%;
+  padding-right: 10px;
+}
 
+/* <!-- end creato per --> */
 
+.artisti{
+  display: flex;
+  width: calc(100% / 6);
+  padding-right: 10px;
+  margin-left: 10px;
+}
 
+.circular{
+  border-radius: 50%;
+  padding-right: 10px;
+}
 
+.circular img{
+
+}
 
 
 
