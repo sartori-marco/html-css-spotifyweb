@@ -1,3 +1,4 @@
+/* regole generali */
 * {
   margin: 0;
   padding: 0;
@@ -7,13 +8,10 @@
 .container {
   width: 100%;
   height: 100vh;
-  background-color: yellow;
   overflow: hidden;
 }
-
-
-.green {
-  background-color: green;
+.blu {
+  background-color: blue;
 }
 
 .red {
@@ -24,35 +22,289 @@
   background-color: violet;
 }
 
-.subtitle a{
-  color: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-decoration: none;
-
-}
-
-.subtitle {
+.text-center{
   text-align: center;
-  padding-top: 10px;
 }
 
-.title{
-  margin-top: 30px;
-  margin-bottom: 20px;
+.flex{
+  display: flex;
+  align-items: center;
+}
+/* end regole generali */
+
+
+/* START CSS MAIN */
+main {
+  display: flex;
+  height: calc(100% - 90px);
+}
+
+/* START SECTION MENU-LATERALE */
+.menu-laterale {
+  width: 250px;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+
+/* <!-- START MENU-LATERALE --> */
+ .header-menu ul {
+   list-style-type: none;
+ }
+
+ .header-menu ul a {
+  text-decoration: none;
+ }
+
+ .header-menu ul span {
+  color: grey;
+ }
+
+
+ .header-menu ul span.home{
   color: white;
+ }
+
+  .header-menu ul span:hover,
+  .header-menu ul span:active{
+    color: white;
+  }
+
+  .header-menu ul span{
+    padding-left: 10px;
+  }
+
+.header-menu img{
+  width: 40px;
+  padding: 5px 0px;
+  vertical-align: middle;
+}
+
+.header-menu img.logo-spotify{
+  width: 70%;
+  padding-bottom: 20px;
+}
+
+/* <!-- END MENU-LATERALE --> */
+
+/* START MENU PLAYLIST */
+.nuove-playlist .crea-playlist a span{
+  color: grey;
+}
+
+.nuove-playlist .crea-playlist a span:hover{
+  color: white;
+}
+
+.nuove-playlist div.quadrato{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  display: inline-block;
+  background-color: grey;
+  vertical-align: middle;
+
+}
+
+.nuove-playlist div.quadrato:hover,
+.nuove-playlist div.quadrato:active{
+  background-color: white;
+}
+
+.nuove-playlist div.quadrato i{
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+.nuove-playlist a{
+  text-decoration: none;
+}
+
+.nuove-playlist h2{
+  color: white;
+}
+
+.menu-playlist {
+  min-height: 150px;
+  overflow-y: auto;
+  padding: 20px 0px;
+  color: white;
+}
+
+
+.menu-playlist ul li{
+  padding: 15px 0px;
+}
+
+.menu-playlist a{
+  color: grey;
+  text-decoration: none;
+}
+
+.menu-playlist a:hover{
+  color: white;
+}
+
+.menu-playlist ul li.prima-li span{
+ color: white;
+}
+/* END MENU PLAYLIST */
+
+/* START FOOTER MENU LATERALE */
+.menu-footer-laterale{
+  width: 100%;
+  margin: auto;
+  padding: 10px 0;
+}
+
+.menu-footer-laterale a{
+  color: grey;
+  text-decoration: none;
+}
+
+.menu-footer-laterale a:hover{
+  color: white;
+}
+
+.menu-footer-laterale i:hover{
+  color: white;
+}
+
+.menu-footer-laterale i{
+  color: grey;
+}
+
+.menu-footer-laterale a,hr, h2{
+  margin:7px 0px;
+}
+
+.menu-footer-laterale div i, h2{
+  color: white;
+}
+
+.flex i{
   font-size: 30px;
-  margin-left: 20px;
+  color: grey;
 }
 
-.text{
-  margin-left: 20px;
+/* END MENU LATERALE FOOTER */
+
+
+/* START MENU CENTRALE  */
+.menu-centrale {
+  width: calc(100% - 250px);
+  padding-top: 100px;
+  background-color: rgb(2, 0, 31);
+  overflow-y: scroll;
+}
+
+
+/* STRAT MENU FISSO ALTO UPGRADE*/
+.call-to-action {
+  height: 90px;
+  line-height: 90px;
+  position: fixed;
+  top:0;
+  right:0;
+  z-index: 1;
+  background-color: rgba(11, 11, 11, 0.52);
+  width: calc(100% - 250px);
+  text-align: right;
+}
+
+.call-to-action .btn {
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 1px solid white;
+  margin-right: 25px;
+  transition: 0s;
+}
+
+.call-to-action a.btn {
   color: white;
-  margin-bottom: 20px;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.font-big .btn:hover{
+  font-size: 20px;
+}
+
+.font-big {
+  font-size: 25px;
+}
+/* END MENU FISSO ALTO UPGRADE*/
+
+/* START HEADER MENU CENTRALE */
+.header-menu-centrale{
+  max-width: 1170px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0 15px;
+}
+
+.header-menu-centrale div{
+  padding: 15px;
+}
+
+.header-menu-centrale a{
+  text-decoration: none;
+  color: grey;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.header-menu-centrale a:hover{
+  color: white;
 }
 
 
-.layer{
+/* END HEADER MENU CENTRALE */
+
+/* START ALBUMS*/
+/* container per tutti gli album */
+.container-albums{
+  padding: 15px;
+}
+
+.container-title-albums h2{
+  color: white;
+  font-size: 35px;
+}
+
+
+.container-albums-first{
+  display: flex;
+}
+
+.container-full-albums{
+  width: calc(100 / 6);
+}
+
+.albums-title {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin: 0px 15px;
+}
+
+.container-albums-first  .albums-title img{
+  width: 100%;
+}
+
+.layer {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -60,187 +312,8 @@
   left: 0;
 }
 
-
-
-/* FINE REGOLE GENERALI */
-
-/* inizio main */
-main {
-  display: flex;
-  height: calc(100% - 90px);
-}
-
-.main-playlist{
-  flex-grow: 2;
-  min-height: 200px;
-
-}
-
-.main-playlist ul{
-  height: 100%;
-  /* barra laterale */
-  overflow-y: auto;
-}
-
-
-
-.main-nav {
-  width: 250px;
-  height: 100%;
-  background-color: pink;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.main-content {
-  width: calc(100% - 250px);
-  height: 100%;
-  padding-top: 90px;
-  background-color: rgb(38, 42, 96);
-  overflow-y: scroll;
-}
-
-.call-to-action {
-  position: fixed;
-  top:0;
-  right:0;
-  z-index: 1;
-  background-color: rgba(11, 11, 11, 0.52);
-  width: calc(100% - 250px);
-  height: 90px;
-  line-height: 90px;
-  text-align: right;
-}
-.call-to-action .btn {
-  padding: 5px 10px;
-  border-radius: 20px;
-  border: 1px solid white;
-  margin-right: 30px;
-}
-
-.call-to-action a.btn {
-  color: white;
-  font-size: 20px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-/* END SECTION TOP EFFETTUA L'UPGRADE */
-
-.logo{
-  margin: 15px 15px;
-}
-
-.link_white a{
-  text-decoration: none;
-
-  color: grey;
-  font-size: 20px;
-  margin-left: 10px;
-}
-
-.link_white i{
-  font-size: 25px;
-  margin-bottom: 5px;
-}
-
-.link_white a:hover{
-  color: white;
-}
-/* end main-nav */
-
-/* start playlist */
-
-
-
-.main-playlist h3{
-  color: white;
-  text-transform: uppercase;
-  margin-left: 10px;
-  margin-top: 20px;
-
-}
-
-.main-playlist li a {
-  color: grey;
-  text-decoration: none;
-  margin-left: 10px;
-}
-
-.main-playlist li{
-  margin-bottom: 10px;
-}
-
-.main-playlist i{
-  font-size: 35px;
-
-}
-/* end playlist */
-
-/* start categorie */
-
-.categorie{
-  display: flex;
-  justify-content: center;
-}
-
-.categoria{
-  margin-top: 15px;
-  width: 200px;
-  height: 100px;
-
-}
-
-.categorie a{
-  text-decoration: none;
-  text-transform: uppercase;
-  color: grey;
-
-}
-/********** end categorie */
-/* recently played */
-.recently-played{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-left: 20px;
-  margin-right: 20px;
-
-}
-
-.elementi{
-  width: calc(100% / 6);
-  padding-right: 10px;
-  position: relative;
-}
-
-.recently-played h3 a{
-  color: white;
-  margin-top: 15px;
-  text-decoration: none;
-}
-
-.recently-played p a{
-  color: white;
-  text-decoration: none;
-}
-
-.recently-played h3{
-  text-align: center;
-  margin-top: 15px;
-  margin-bottom: 10px;
-}
-
-.recently-played p{
-  text-align: center;
-}
-
-.elementi img{
-  width: 100%;
-}
-
-.layer:hover{
-  background-color: rgba(0, 0, 0, 0.57);
+.layer:hover {
+  background-color: grey;
 }
 
 .layer i{
@@ -257,83 +330,110 @@ main {
   display: inline;
 }
 
-/* end recently-played */
 
-.creato-per{
-  display: flex;
-  justify-content: left;
-  flex-wrap: wrap;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.release{
-  width: calc(100% / 6);
-}
-
-.release img{
-  width: 100%;
-  padding-right: 10px;
-}
-
-/* <!-- end creato per --> */
-
-.artisti{
-  display: flex;
-  width: calc(100% / 6);
-  padding-right: 10px;
+.title-albums{
+  width: 150px;
   margin-left: 10px;
-}
-
-.circular{
-  border-radius: 50%;
-  padding-right: 10px;
-}
-
-.circular img{
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* start main nav footer */
-
-.main-nav-footer a{
-  color: grey;
-  text-decoration: none;
-  margin-left: 10px;
-
-
-}
-
-
-
-.main-nav-footer h2{
-  margin-left: 10px;
-  margin-right: 10px;
-  font-size: 20px;
+  margin-top: 10px;
   color: white;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-top: 10px;
-  border-top: 1px solid white;
+
+}
+
+.title-albums p{
+  font-size: 12px;
+  margin: 10px 0px;
+  color: grey;
 }
 
 
+.container-full-albums a{
+  text-decoration: none;
+}
+/* END ALBUMS MUSICA CENTRALE FIRST */
 
+/* START ALBUMS MUSICA CENTRALE  */
+.container-title-albums{
+  padding: 15px;
+}
 
+.container-title-albums h2{
+  color: white;
+}
+
+.container-title-albums p {
+  color: grey;
+}
+
+.container-albums-first{
+  display: flex;
+}
+
+.container-second-albums{
+  width: 180px;
+}
+
+.albums-title {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin: 0px 10px;
+}
+
+.container-second-albums  .albums-title img{
+  width: 100%;
+}
+
+.layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.layer:hover {
+  background-color: rgba(88, 88, 89, 0.74);
+}
+
+.layer i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  color: white;
+  display: none;
+}
+
+.layer:hover i {
+  display: inline;
+}
+
+.title-albums{
+  width: 150px;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: white;
+}
+
+.title-albums p{
+  font-size: 12px;
+  margin: 10px 0px;
+  color: grey;
+}
+
+.container-second-albums a{
+  text-decoration: none;
+}
+
+/* END ALBUMS MUSICA CENTRALE */
+
+/* START ALBUMS ROTONDO */
+.border-radius{
+  border-radius: 50%;
+}
+
+/* END ALBUMS ROTONDO */
 
 /******************FINE MAIN */
 
@@ -341,7 +441,6 @@ main {
 footer {
   width: 100%;
   height: 90px;
-
   bottom:0;
   left: 0;
   background-color: grey;

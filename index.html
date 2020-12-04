@@ -10,161 +10,363 @@
 </head>
 <body>
 
+  <!-- START CONTAINER  -->
   <div class="container">
-    <!-- inizio main -->
+
+    <!-- START MAIN -->
     <main>
-      <section class="main-nav">
-        <div class="main-nav-header">
-          <a href="#">  <img class="logo" src="img\logo.svg" alt="logo spotify"> </a>
-        </div>
-        <!-- logo  -->
-        <div class="main-nav-header link_white">
+
+      <!-- START SECTION MENU-LATERALE -->
+      <section class="menu-laterale">
+
+        <!-- START HEADER MENU-LATERALE -->
+        <div class="header-menu">
+
           <ul>
-            <li><a href="#"> <i class="fas fa-home"></i> Home</a></li>
-            <li><a href="#"> <i class="fas fa-search"></i> Cerca</a></li>
-            <li><a href="#"> <i class="fas fa-book"></i> La tua libreria</a></li>
+            <!-- LOGO  -->
+            <li>
+                <a href="#">
+                  <img class="logo-spotify" src="img/logo.svg" alt="logo">
+                </a>
+            </li>
+            <!-- END LOGO -->
+
+            <!-- HOME -->
+            <li>
+              <a href="#">
+                <img src="img/home.svg" alt="home">
+                <span class="home">Home</span>
+              </a>
+            </li>
+            <!-- END HOME -->
+
+            <!-- SEARCH -->
+            <li>
+              <a href="#">
+                <img src="img/search.svg" alt="search">
+                <span>Cerca</span>
+              </a>
+            </li>
+            <!-- END SEARCH -->
+
+            <!-- LIBRERIA -->
+            <li>
+              <a href="#">
+                <img src="img/libreria.svg" alt="libreria">
+                <span>La tua Libreria</span>
+              </a>
+            </li>
+            <!-- END LIBRERIA -->
+
+          </ul>
+
+        </div>
+        <!-- END HEADER MENU-LATERALE -->
+
+        <!-- START NUOVA PLAYLIST -->
+        <div class="nuove-playlist">
+
+          <!-- START TITOLO -->
+          <h2>Playlist</h2>
+          <!-- END TITOLO -->
+
+          <div class="crea-playlist">
+            <a href="#">
+              <div class="quadrato">
+               <i class="fas fa-plus"></i>
+              </div>
+              <span>
+               Crea Playlist
+             </span>
+            </a>
+          </div>
+        </div>
+        <!-- END NUOVA PLAYLIST -->
+
+        <!-- START MENU-PLAYLIST -->
+        <div class="menu-playlist">
+          <ul>
+
+            <li><a href="#">Nuova Playlist</a></li>
+            <li><a href="#">Nuova Playlist</a></li>
+            <li><a href="#">Nuova Playlist</a></li>
+            <li><a href="#">Nuova Playlist</a></li>
+            <li><a href="#">Nuova Playlist</a></li>
+            <li><a href="#">Nuova Playlist</a></li>
+            <li><a href="#">Nuova Playlist</a></li>
+            <li><a href="#">Nuova Playlist</a></li>
           </ul>
         </div>
+        <!-- END MENU-PLAYLIST -->
 
 
-        <div class="main-playlist">
-          <h3>playlist</h3>
-            <ul>
-              <li><a href="#"><i class="fas fa-plus-square"></i> Crea playlist</a></li>
-              <li><a href="#">Nome playlist</a></li>
-              <li><a href="#">Nome playlist</a></li>
-              <li><a href="#">Nome playlist</a></li>
-              <li><a href="#">Nome playlist</a></li>
-              <li><a href="#">Nome playlist</a></li>
-              <li><a href="#">Nome playlist</a></li>
-              <li><a href="#">Nome playlist</a></li>
-            </ul>
+        <!-- START FOOTER MENU LATERALE -->
+        <div class="menu-footer-laterale">
+          <a href="#"><i class="far fa-arrow-alt-circle-down"> </i> <span class="grey">Installa app</span></a>
+          <hr>
+          <div class="flex"><i class="fas fa-user-circle"> </i> <h2>Marco Sartori</h2> </div>
         </div>
-        <div class="main-nav-footer">
-          <a href="#">Installa app</a>
-          <h2>Marco Sartori</h2>
-        </div>
+        <!-- END FOOTER MENU LATERALE -->
+
       </section>
-      <!-- end main-nav -->
-      <section class="main-content">
-        <div class="call-to-action">
-          <a href="#" class="btn">effettua l'upgrade</a>
+      <!-- END MENU-LATERALE -->
+
+
+      <!-- START MENU CENTRALE -->
+      <section class="menu-centrale">
+
+        <!-- START MENU-FISSO-ALTO UPGRADE-->
+        <div class="call-to-action font-big">
+          <a href="#" class="btn">Effetua l'upgrade</a>
         </div>
-        <!-- end div effettua l'upgrade -->
-        <div class="categorie">
-          <div class="categoria red">
-            <a href="#">in evidenza</a>
-          </div>
-          <div class="categoria green">
-            <a href="#">podcast</a>
-          </div>
-          <div class="categoria red">
-            <a href="#">classifiche</a>
-          </div>
-          <div class="categoria violet">
-            <a href="#">generi e mood</a>
-          </div>
-          <div class="categoria red">
-            <a href="#">nuove uscite</a>
-          </div>
-          <div class="categoria green">
-            <a href="#">scopri</a>
-          </div>
+        <!-- END MENU-FISSO-ALTO UPGRADE-->
+
+
+        <!-- START HEADER MENU CENTRALE -->
+        <div class="header-menu-centrale">
+            <div> <a href="#">in evidenza </a> </div>
+            <div> <a href="#">podcast</a> </div>
+            <div> <a href="#">classifiche</a> </div>
+            <div> <a href="#">generi e mood</a> </div>
+            <div> <a href="#">nuove uscite</a> </div>
+            <div> <a href="#">scopri</a> </div>
         </div>
-        <!-- end categorie -->
-        <!-- recently played -->
-        <div class="title"> <strong>Recently played</strong>
+        <!-- END HEADER MENU CENTRALE -->
+
+
+        <!-- START ALBUM CENTRALE -->
+        <!-- /* container per tutti gli album */ -->
+      <div class="container-albums">
+
+        <!-- TITLE -->
+        <div class="container-title-albums">
+          <h2>Recently Played</h2>
         </div>
-        <!-- end title -->
-        <div class="recently-played">
-          <div class="elementi red">
-              <img src="img/metal_lifting.jpg" alt="metal">
-              <div class="layer">
-                <i class="far fa-play-circle"></i>
+        <!-- end TITLE -->
+
+        <!-- START CONTAINER ALBUMS FIRST -->
+        <div class="container-albums-first">
+
+          <!-- START PRIMO ALBUM -->
+          <div class="container-full-albums">
+            <!-- faccio una classe a per tutto così si vede la manina -->
+            <a href="#">
+              <div class="albums-title">
+                <img src="img/metal_lifting.jpg" alt="metal">
+                <div class="layer">
+                  <i class="far fa-play-circle"></i>
+                </div>
               </div>
-              <h3> <a href="#">Heavy Metal</a></h3>
-              <p> <a href="#">Subtitle</a></p>
+              <div class="title-albums text-center">
+                <h3>Heavy Metal</h3>
+                <p>Subtitle</p>
+              </div>
+            </a>
           </div>
+          <!-- END PRIMO ALBUM -->
 
-          <div class="elementi green">
-            <a href="#"><img src="img/metal_lifting.jpg" alt="metal"></a>
-            <h3> <a href="#">Heavy Metal</a></h3>
-            <p> <a href="#">Subtitle</a></p>
+          <!-- START SECONDO ALBUM -->
+          <div class="container-full-albums">
+            <a href="#">
+              <div class="albums-title">
+                <img src="img/metal_lifting.jpg" alt="metal">
+                <div class="layer">
+                  <i class="far fa-play-circle"></i>
+                </div>
+              </div>
+              <div class="title-albums text-center">
+                <h3>Heavy Metal</h3>
+                <p>Subtitle</p>
+              </div>
+            </a>
           </div>
+          <!-- END SECONDO ALBUM -->
 
-          <div class="elementi red">
-            <a href="#"><img src="img/metal_lifting.jpg" alt="metal"></a>
-            <h3> <a href="#">Heavy Metal</a></h3>
-            <p> <a href="#">Subtitle</a></p>
+          <!-- START TERZO ALBUM -->
+          <div class="container-full-albums">
+            <a href="#">
+              <div class="albums-title">
+                <img src="img/metal_lifting.jpg" alt="metal">
+                <div class="layer">
+                  <i class="far fa-play-circle"></i>
+                </div>
+              </div>
+              <div class="title-albums text-center">
+                <h3>Heavy Metal</h3>
+                <p>Subtitle</p>
+              </div>
+            </a>
           </div>
+          <!-- END TERZO ALBUM -->
 
-          <div class="elementi violet">
-            <a href="#"><img src="img/metal_lifting.jpg" alt="metal"></a>
-            <h3> <a href="#">Heavy Metal</a></h3>
-            <p> <a href="#">Subtitle</a></p>
+          <!-- START QUARTO ALBUM -->
+          <div class="container-full-albums">
+            <a href="#">
+              <div class="albums-title">
+                <img src="img/metal_lifting.jpg" alt="metal">
+                <div class="layer">
+                  <i class="far fa-play-circle"></i>
+                </div>
+              </div>
+              <div class="title-albums text-center">
+                <h3>Heavy Metal</h3>
+                <p>Subtitle</p>
+              </div>
+            </a>
           </div>
-          <div class="elementi red">
-            <a href="#"><img src="img/metal_lifting.jpg" alt="metal"></a>
-            <h3> <a href="#">Heavy Metal</a></h3>
-            <p> <a href="#">Subtitle</a></p>
+          <!-- END QUARTO ALBUM -->
+
+          <!-- START QUINTO ALBUM -->
+          <div class="container-full-albums">
+            <a href="#">
+              <div class="albums-title">
+                <img src="img/metal_lifting.jpg" alt="metal">
+                <div class="layer">
+                  <i class="far fa-play-circle"></i>
+                </div>
+              </div>
+              <div class="title-albums text-center">
+                <h3>Heavy Metal</h3>
+                <p>Subtitle</p>
+              </div>
+            </a>
           </div>
-          <div class="elementi green">
-            <a href="#"><img src="img/metal_lifting.jpg" alt="metal"></a>
-            <h3> <a href="#">Heavy Metal</a></h3>
-            <p> <a href="#">Subtitle</a></p>
+          <!-- END QUINTO ALBUM -->
+
+          <!-- START SESTO ALBUM -->
+          <div class="container-full-albums">
+            <a href="#">
+              <div class="albums-title">
+                <img src="img/metal_lifting.jpg" alt="metal">
+                <div class="layer">
+                  <i class="far fa-play-circle"></i>
+                </div>
+              </div>
+              <div class="title-albums text-center">
+                <h3>Heavy Metal</h3>
+                <p>Subtitle</p>
+              </div>
+            </a>
           </div>
+          <!-- END SESTO ALBUM -->
+
         </div>
-        <!-- end recently-played -->
-        <div class="title"> <strong>Creato per Marco Sartori</strong> </div>
-        <div class="text">
-          Più ascolti, più accurati saranno i suggerimenti.
+        <!-- END CONTAINER ALBUMS FIRST -->
+
+
+        <!-- START CONTAINER ALBUMS SECOND -->
+        <!-- TITLE -->
+        <div class="container-title-albums">
+          <h2>Creato per Marco Sartori</h2>
+          <p>Più ascolti, più saranno accurati i suggerimenti</p>
         </div>
-        <!-- start creato per -->
-        <div class="creato-per">
-          <div class="release green">
-            <a href="#"><img src="img/metal_lifting.jpg" alt="metal"></a>
+        <!-- end TITLE -->
+
+        <!-- START ALBUMS -->
+        <div class="container-albums-first">
+
+          <!-- PRIMO ALBUM -->
+          <div class="container-second-albums">
+            <a href="#">
+              <div class="albums-title">
+                <img src="img/radar.jpeg" alt="radar">
+                <div class="layer">
+                  <i class="far fa-play-circle"></i>
+                </div>
+              </div>
+              <div class="title-albums text-center">
+                <h3>Release Radar</h3>
+              </div>
+            </a>
           </div>
-          <div class="release red">
-            <a href="#"><img src="img/metal_lifting.jpg" alt="metal"></a>
+          <!-- / PRIMO ALBUM -->
+
+         <!-- SECONDA RIGA ALBUM -->
+          <div class="container-second-albums">
+            <a href="#">
+              <div class="albums-title">
+                <img src="img/mixdaily.jpeg" alt="daily">
+                <div class="layer">
+                  <i class="far fa-play-circle"></i>
+                </div>
+              </div>
+              <div class="title-albums text-center">
+                <h3>Daily Mix 1</h3>
+              </div>
+            </a>
           </div>
+          <!-- / SECONDA RIGA ALBUM -->
+
         </div>
-        <!-- end creato per -->
+        <!-- END CONTAINER ALBUMS SECOND -->
 
-          <div class="title">
-            <strong>Artisti più popolari</strong>
+
+        <!-- START CONTAINER ALBUMS THIRD -->
+
+        <!-- TITLE -->
+        <div class="container-title-albums">
+          <h2>Artisti più popolari</h2>
+          <p>Più ascolti, più saranno accurati i suggerimenti</p>
+        </div>
+        <!-- end TITLE -->
+
+        <!-- START ALBUMS -->
+        <div class="container-albums-first">
+
+          <!-- PRIMO ALBUM -->
+          <div class="container-second-albums">
+            <a href="#">
+              <div class="albums-title border-redius">
+                <img class="border-radius"src="img/youg.jpeg" alt="youg">
+                <div class="layer border-radius">
+                  <i class="far fa-play-circle"></i>
+                </div>
+              </div>
+              <div class="title-albums text-center">
+                <h3>Lana Del Rey</h3>
+              </div>
+            </a>
           </div>
-          <div class="text">
-            Più ascolti, più accurati saranno i suggerimenti.
+          <!-- / PRIMO ALBUM -->
+
+          <!-- SECONDO ALBUM -->
+          <div class="container-second-albums">
+            <a href="#">
+              <div class="albums-title">
+                <img class="border-radius" src="img/einaudi.jpeg" alt="einaudi">
+                <div class="layer border-radius">
+                  <i class="far fa-play-circle"></i>
+                </div>
+              </div>
+              <div class="title-albums text-center">
+                <h3>Ludovico Einaudi</h3>
+              </div>
+            </a>
           </div>
-          <div class="artisti">
-            <a href="#"> <img class="circular" src="img/youg.jpeg" alt=""></a>
-            <a href="#"> <img class="circular" src="img/youg.jpeg" alt=""></a>
-          </div>
+          <!-- END SECONDO ALBUM -->
 
-        <!-- end artisti popolari -->
+        </div>
+        <!-- END CONTAINER ALBUMS -->
 
-
-
-
-
-
-
-
-
-
-
+      </div>
+      <!-- END ALBUMS CENTRALE -->
 
       </section>
-      <!-- end section main -->
+      <!-- END MENU CENTRALE -->
 
     </main>
-    <!-- fine main -->
+    <!-- END MAIN -->
+
+    <!-- START FOOTER -->
     <footer>
 
+
+
     </footer>
-    <!-- fine footer -->
+    <!-- END FOOTER -->
+
   </div>
-  <!-- fine container -->
+  <!-- END CONTAINER -->
 
 </body>
 </html>
