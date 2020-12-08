@@ -93,10 +93,10 @@ main {
 /* <!-- END MENU-LATERALE --> */
 /* MEDIA MENU LATERALE */
  @media screen and (max-width:578px) {
-  /* .menu-laterale{
+  .menu-laterale{
     width: 20%;
     padding: 5px;
-  } */
+  }
 
 
   .menu-laterale .logo-spotify{
@@ -111,8 +111,17 @@ main {
     visibility: hidden;
   }
 
+  .menu-footer-laterale span{
+    display: none;
+  }
+  .menu-footer-laterale hr, h2{
+    display: none;
+  }
 
-
+  .menu-footer-laterale i{
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
 
 }
 /* END MEDIA MENU LATERALE */
@@ -234,7 +243,14 @@ main {
   background-color: rgb(2, 0, 31);
   overflow-y: scroll;
 }
+/* START MEDIA MENU CENTRALE */
+@media screen and (max-width:578px){
+  .menu-centrale{
+    width: calc(100% - 20%);
+  }
+}
 
+/* END MEDIA MENU CENTRALE */
 
 /* START MENU FISSO ALTO UPGRADE*/
 .call-to-action {
@@ -272,6 +288,21 @@ main {
   font-size: 25px;
 }
 /* END MENU FISSO ALTO UPGRADE*/
+/* START MEDIA UPGRADE */
+
+@media screen and (max-width:578px){
+  .call-to-action{
+    width: calc(100% - 20%);
+
+  }
+}
+
+@media screen and (max-width:249px){
+  .call-to-action{
+    display: none;
+  }
+}
+
 
 /* START HEADER MENU CENTRALE */
 .header-menu-centrale{
@@ -299,8 +330,20 @@ main {
   color: white;
 }
 
-
 /* END HEADER MENU CENTRALE */
+/* START MEDIA HEADER MENU CENTRALE */
+@media screen and (max-width:992px){
+  .header-menu-centrale{
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width:768px){
+  .header-menu-centrale div{
+    flex-basis: calc(100% / 3);
+  }
+}
+
 
 /* START ALBUMS*/
 /* container per tutti gli album */
@@ -383,6 +426,27 @@ main {
   text-decoration: none;
 }
 /* END ALBUMS MUSICA CENTRALE FIRST */
+/* START MEDIA ALBUMS */
+@media screen and (max-width:1170px){
+  /* cosi li faccio andare a capo */
+  .container-albums-first{
+    flex-wrap: wrap;
+  }
+  /* cosi decido quanti ne voglio vedere sulla riga (4)*/
+  .container-full-albums{
+    flex-basis: calc(100% / 4);
+  }
+}
+/* cosi decido quanti ne voglio vedere sulla riga (2)*/
+@media screen and (max-width:935px){
+  .container-full-albums{
+    flex-basis: calc(100% / 2);
+  }
+}
+
+/* END MEDIA ALBUMS */
+
+
 
 /* START ALBUMS MUSICA CENTRALE  */
 .container-title-albums{
@@ -483,7 +547,7 @@ footer {
   width: 100%;
   height: 90px;
   display: flex;
-  background-color: rgba(0, 0, 0, 0.58);
+  background-color: rgba(0, 0, 0, 0.75);
   bottom:0;
   left: 0;
 }
