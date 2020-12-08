@@ -524,6 +524,12 @@ main {
 }
 
 /* END ALBUMS MUSICA CENTRALE */
+/* MEDIA MUSICA CENTRALE */
+@media screen and (max-width:1170px){
+  .container-albums-first{
+    flex-wrap: wrap;
+  }
+}
 
 /* START ALBUMS ROTONDO */
 .border-radius{
