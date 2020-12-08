@@ -88,8 +88,36 @@ main {
   width: 70%;
   padding-bottom: 20px;
 }
+/* inserire logo small */
 
 /* <!-- END MENU-LATERALE --> */
+/* MEDIA MENU LATERALE */
+ @media screen and (max-width:578px) {
+  /* .menu-laterale{
+    width: 20%;
+    padding: 5px;
+  } */
+
+
+  .menu-laterale .logo-spotify{
+    display: none;
+  }
+
+  .header-menu ul li span{
+    display: none;
+  }
+
+  .nuove-playlist, .menu-playlist{
+    visibility: hidden;
+  }
+
+
+
+
+}
+/* END MEDIA MENU LATERALE */
+
+
 
 /* START MENU PLAYLIST */
 .nuove-playlist .crea-playlist a span{
@@ -158,6 +186,7 @@ main {
 }
 /* END MENU PLAYLIST */
 
+
 /* START FOOTER MENU LATERALE */
 .menu-footer-laterale{
   width: 100%;
@@ -207,7 +236,7 @@ main {
 }
 
 
-/* STRAT MENU FISSO ALTO UPGRADE*/
+/* START MENU FISSO ALTO UPGRADE*/
 .call-to-action {
   height: 90px;
   line-height: 90px;
@@ -287,10 +316,12 @@ main {
 
 .container-albums-first{
   display: flex;
+
 }
 
 .container-full-albums{
   width: calc(100 / 6);
+
 }
 
 .albums-title {
@@ -298,6 +329,8 @@ main {
   text-align: center;
   color: white;
   margin: 0px 15px;
+
+
 }
 
 .container-albums-first  .albums-title img{
@@ -571,23 +604,17 @@ footer {
   color: white;
 }
 
-/* .box-right .volume{
-  width: 100px;
-  height: 3px;
-  background-color: white;
-  border-radius: 50px;
-  display: flex;
-  align-items: center;
 
-} */
 
 .box-right .volume-barra{
   width: 100px;
   height: 4px;
+  border-radius: 20px;
   background-color: white;
 }
 
 
+/* MEDIA FOOTER */
 
 
 
